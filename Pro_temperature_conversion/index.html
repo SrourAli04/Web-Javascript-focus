@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="pageHeader">Welcome the professionel temperature converter</h1>
+        <div id="temperatureInput">
+            <label for="temperature">Enter temperature here:</label>
+            <br>
+            <input type="number" value="0" id="temperature">
+        </div>
+        
+        <div id="conversionSection">
+            <div  class="conversionType">
+                <input type="radio" id="CtoFradio" name="conversion"><label for="CtoF">Celcius to fehrenheit</label>
+            </div>
+            <br>
+            <div class="conversionType">
+                <input type="radio" id="FtoCradio" name="conversion"><label for="FtoC">Fehrenheit to celcius</label>
+            </div>
+            <br>
+            <button id="convertBt">Convert</button>
+            <br>
+            <label for="answer" id="answer">Answer will appear here</label>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

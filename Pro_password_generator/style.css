@@ -1,0 +1,85 @@
+body{
+    background-color: #005792;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#pageHeading{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+#program{
+    background-color: #00204a;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 0.75rem;
+    
+}
+
+#passowrdForm{
+    margin-bottom: 2rem;
+
+}
+#password{
+    border: 0;
+    font-size: large;
+    height: 2rem;
+    border-radius: 0.75rem;
+}
+
+#generateBt{
+    height: 2.1rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    padding: 0; 
+
+}
+
+#programOptions{
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#passwordLength{
+    transform: scale(1);
+}
+#programOptions input{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+#programOptions label{
+    font-size: 2rem;
+}
+.page{
+    transition: 1s;
+}
+ #copyright{
+    margin-top: 5rem;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.checkBoxField{
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+@media only screen and (min-width:768px) {
+
+    #program{
+        margin-top: 1rem;
+        min-width: 700px;
+    }
+    #password{
+        font-size: x-large;
+    }
+    #generateBt{
+        height: 2.1rem;
+    }
+    #copyright{
+        margin-top: 2rem;
+    }
+}

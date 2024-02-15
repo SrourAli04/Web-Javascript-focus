@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7eaf6;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+body div{
+    background-color: #a2a8d3;
+    border-radius: 3rem;
+    padding: 10px;
+    max-width: 600px;
+}
+#pageHeader{
+    color: #113f67;
+    
+}
+
+#temperatureInput{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#temperature{
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: x-large;
+    text-align: center;
+}
+
+#conversionSection{
+    padding: 0;
+    font-size: large;
+}
+
+#convertBt{
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 10px;
+    font-size: large;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+#convertBt:hover{
+    background-color: #38598b;
+    cursor: pointer;
+}
+#convertBt:active{
+    background-color: #38598b;
+}
+#answer{
+    font-size: x-large;
+}
+
+
+

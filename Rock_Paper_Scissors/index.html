@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Rock-Paper-Scissors</h1>
+    <div id="choice">
+        <img src="images/rock.png" alt="Rock" id="rock" onclick="playGame('Rock')"/> 
+        <img src="images/paper.png" alt="Paper" id="paper" onclick="playGame('Paper')"/> 
+        <img src="images/scissors.png" alt="Scissors" id="scissors"   onclick="playGame('Scissors')" /> 
+    </div>
+    <div id="choices">
+        <div id="playerChoiceDisplay"  class="choice-display">Player:</div>
+        <div id="computerChoiceDisplay" class="choice-display">Computer:</div>
+    </div>
+    <div id="result">
+        
+    </div>
+    <div id="score">
+        <p>Player Score:<span id="playerScore">0</span></p>
+        <p>Computer Score:<span id="computerScore">0</span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

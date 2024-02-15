@@ -1,0 +1,132 @@
+
+/*  
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    margin-top: 4em;
+
+}
+
+#choice{
+    margin-top: 2rem;
+}
+
+#choices{
+    margin-top: 2rem;
+}
+
+.redText{
+    color:red;
+}
+
+.greenText{
+    color:green;
+}
+*/
+/*  ------ General Styling ------ */
+body {
+    font-family: 'Roboto', sans-serif; /* A clean, modern font */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #f0f0f0; /* Light background */
+}
+
+h1#title {
+    margin-bottom: 30px;
+    color: #333; /* Darker text */
+    font-size: 2.5em; /* Increased title size */
+}
+/* ------ Button Styling ------ */
+#choice button {
+    background-color: #4CAF50; /* Green-ish color */
+    color: white;
+    padding: 15px 30px; /* Wider buttons */
+    margin: 0 10px 20px 10px;  
+    border: none;
+    border-radius: 8px; /* Softer corners */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger button text */
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#choice button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* ------ Display Grid, Choices, and Result Styles ------ */
+.choice-display {
+    border: 1px solid #ccc;
+    padding: 20px; /* More padding */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.3em;  /* Increased font size */
+}
+
+#choices, #result, #score {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#result { 
+    text-align: center; /* Center the result message */
+    font-size: 1.5em;   /* Larger result text */
+}
+
+/* ------ Score Styling ------ */
+#score p {
+    font-size: 1.2em; /* Increased score font size */
+}
+
+#playerScore, #computerScore {
+    font-weight: bold;
+    color: #2196F3; /* Blue for a contrasting color */
+}
+
+/* ------ Result Styling ------ */
+.greenText {
+    color: green;
+    font-weight: bold;
+}
+
+.redText {
+    color: red;
+    font-weight: bold;
+}
+
+/*  ------ Responsive Layout (Media Queries) ------ */
+@media (max-width: 600px) {
+    #choices, #result, #score { 
+        grid-template-columns: 1fr; /* Stack elements vertically on smaller screens */
+    }
+} 
+/* ------ Image Choice Styling ------ */
+#choice img {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px;
+    margin: 0 10px 20px 10px; 
+    border-radius: 8px; 
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); 
+}
+
+#choice img:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

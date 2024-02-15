@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    font-family: arial,sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    max-width: 500px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#display{
+    width: 100%;
+    padding: 15px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+    margin-top: 3rem;
+}
+
+button{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+#bt2c{
+    grid-column: span 2;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.mainBt{
+    background-color: gray;
+}
+.operationBt{
+    background-color: orange;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operationBt:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operationBt:active{
+    background-color: hsl(35, 100%, 75%);
+}
+
+@media only screen and (min-width:598px){
+    #calculator{
+        max-width: 600px;
+        overflow: hidden;
+        border-radius: 15px;
+        height: 100%;
+    }
+    
+    #display{
+        padding: 20px;
+        font-size: 3rem;
+    }
+    
+    #keys{
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    #bt2c{
+        grid-column: span 2;
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+    }
+    
+    button{
+        width: 120px;
+        background-color: hsl(0, 0%, 30%);
+        font-size: 2.5rem;
+    }
+
+}

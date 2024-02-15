@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    background-color: hsl(0, 0%, 90%);
+}
+#myH1{
+    font-family: "Arial",sans-serif;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#stopwatch-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vb;
+
+}
+#time{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-family: monospace;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%,0.75);
+}
+#stopwatch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+
+#btns button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 80px;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#start-bt{
+    background-color: #009900;
+}
+#start-bt:hover{
+    background-color: #5cb25c;
+}
+
+#stop-bt{
+    background-color:#ff0000;
+}
+#stop-bt:hover{
+    background-color: #ff5050;
+}
+
+#reset-bt{
+    background-color: #0066ff;
+}
+#reset-bt:hover{
+    background-color: #3399ff;
+}
+
+
+
+@media only screen and (min-width:768px){
+    #myH1{
+        font-size: 3rem;
+    }
+
+    #time{
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+
+    #stopwatch{
+        border:2px solid black;
+        border-radius: 50px;
+        background-color: white;
+        font-size: 3rem;
+        padding: 3rem;
+    }
+
+    #btns button{
+        margin: 5px;
+        min-width: 125px;
+    }
+
+}

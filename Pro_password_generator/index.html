@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="program" class="page">
+        <h1  id="pageHeading">Random Password Generator</h1>
+        <div id="passwordForm">
+            <input type="text" readonly id="password">
+            <button id="generateBt"><img src="images/rotate.png" alt="Generate" width="10px"></button>
+        </div>
+        <div id="programOptions" class="page">
+            <label for="options" id="optionsLabel">Options:</label>
+            <br>
+            <label for="passwordLength">Length:</label>
+            <input id="passwordLength" type="range" min="1" max="128" value="12" oninput="updateValue(this.value)">
+            <label id="rangeValue"></label>
+            <br>
+            <input type="checkbox" checked id="includeLowerCase" class="checkBoxField"><label for="lowerCase">Include lower Case characters</label>
+            <br>
+            <input type="checkbox" id="includeUpperCase" class="checkBoxField"><label for="upperCase">Include upper Case characters</label>
+            <br>
+            <input type="checkbox" id="includeNumbers" class="checkBoxField"><label for="numbers">Include numbers</label>
+            <br>
+            <input type="checkbox" id="includeSymbols" class="checkBoxField"><label for="symbols">Include symbols</label>
+            <p id="copyright">Copyright &copy 2024 Sralex reserved</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
