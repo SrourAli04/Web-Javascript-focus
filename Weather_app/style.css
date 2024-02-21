@@ -1,0 +1,83 @@
+/* Basic Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: #f0f5f9; 
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Weather Form Styles */
+.weatherForm {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.weatherForm input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    flex-grow: 1;  /* Input field takes up available space */
+    margin-right: 10px; 
+}
+
+.weatherForm button {
+    padding: 12px 25px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth button color change on hover */
+}
+
+.weatherForm button:hover {
+    background-color: #429a46; /* Darken the button on hover */
+}
+
+
+/* Weather Display Card */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 500px; /* Responsive limit on card width */
+    width: 90%; 
+    display: flex; /* Initially displayed as flex to support error */
+    flex-direction: column; /* Arrange child elements in a column */
+}
+
+.cityDisplay {
+    font-size: 2.2em; 
+    margin-bottom: 10px;
+}
+
+.tempDisplay {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* You'll likely add rules for weatherEmoji */
+
+.errorDisplay {
+    color: red;  
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { 
+    .weatherForm {
+        flex-direction: column; /* Stack form input above button on smaller screens */
+    }
+
+    .weatherForm input[type="text"], .weatherForm button {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}
+
