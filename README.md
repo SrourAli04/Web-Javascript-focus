@@ -19,3 +19,5 @@ Explore and Learn: Open the project directory you've chosen and explore the proj
 
 # Contributing
 If you'd like to contribute to this repository by adding new projects or improving existing ones, feel free to fork the repository and submit a pull request with your changes. Your contributions are greatly appreciated!
+
+## ofcourse i need to mention many thanks to brocode (https://www.youtube.com/@BroCodez)
